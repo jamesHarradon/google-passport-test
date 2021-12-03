@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Profile</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/auth/logout">Logout</a></li>
+            <li><a href="/">Homepage</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome <%= first_name %> </h1>
+        <img src= <%= img_url %> >
+    </header>
+    <main>
+        <p>Profile page example. This loads once user has been authenticated. The session id is saved in a cookie which is then used to access the users details from the postgres db. This data is saved as req.user by passport.</p>
+    </main>
+</body>
+</html>
